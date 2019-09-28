@@ -5,24 +5,26 @@ To run on HPC:
 
 1) Download NetLogo 6.0.4 (64-bit Linux) and unpack in home directory
 
-2) Increase heap size by editing ``netlogo-headless.sh`` to change
+2) Comment out the model code that sets values for turtle (agent) variables.
+
+3) Increase heap size by editing ``netlogo-headless.sh`` to change
    ``-Xmx1024m`` to ``-Xmx2048m``
 
-3) Create subdirectories ~/output and /scratch/t.cri.mschumm/results
+4) Create subdirectories ~/output and /scratch/t.cri.mschumm/results
 
-4) Verify/edit configuration at the top of ``generate-experiments.py`` (e.g.,
+5) Verify/edit configuration at the top of ``generate-experiments.py`` (e.g.,
    you may want to set the seed for the random number generator to make the
    result reproducible). Run this script to generate a list of experiments.
 
-5) Verify/edit script (``mussels-seastars-abm.script``)
+6) Verify/edit script (``mussels-seastars-abm.script``)
 
-6) Upload the following files to your home directory:
+7) Upload the following files to your home directory:
 
    - ``mussels-seastars-abm.nlogo3d``
    - ``mussels-seastars-abm.script``
    - ``mussels-experiments.xml``
 
-7) Submit job with:
+8) Submit job with:
 
        qsub mussels-seastars-abm.script
 
