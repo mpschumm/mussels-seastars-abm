@@ -1,5 +1,5 @@
 # mussels-seastars-abm
-Using 3-D agent-based modeling to build a mechanistic understanding of mussel bed boundary formation
+Using 3-D agent-based modeling to build a mechanistic understanding of mussel bed boundary formation.
 
 To run on HPC:
 
