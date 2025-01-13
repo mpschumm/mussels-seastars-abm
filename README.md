@@ -36,4 +36,4 @@ Also, remember that BehaviorSpace runs once *before* ``setup`` is run. Thus,
 if you include something like ``clear-all`` in ``setup``, you will blow away
 the variable values set by BehaviorSpace.
 
-Support with Python and Java coding for use with cluster: Phil Schumm (pschumm)
+Thanks to Phil Schumm (pschumm) for support with Python, and for Java coding for use with cluster
